@@ -2,15 +2,15 @@
 
 Este é um projeto de blog desenvolvido utilizando as tecnologias:
 
-HTML
+-HTML
 
-CSS
+-CSS
 
-JavaScript
+-JavaScript
 
-Django
+-Django
 
-MySQL
+-MySQL
 
 O blog permite o cadastro de títulos e conteúdos, armazena os dados em um banco de dados MySQL e permite a edição de posts existentes.
 
