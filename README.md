@@ -14,7 +14,7 @@ MySQL
 
 O blog permite o cadastro de títulos e conteúdos, armazena os dados em um banco de dados MySQL e permite a edição de posts existentes.
 
-Como Rodar o Projeto
+# Como Rodar o Projeto
 
 1. Clonar o Repositório
 
