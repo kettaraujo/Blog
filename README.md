@@ -2,57 +2,47 @@
 
 Este é um projeto de blog desenvolvido utilizando as tecnologias:
 
--HTML
+    - HTML
+    - CSS
+    - JavaScript
+    - Django
+    - SQLite
 
--CSS
+O blog permite o cadastro de títulos e conteúdos, armazena os dados em um banco de dados SQLite e permite a edição de posts existentes.
 
--JavaScript
+## Como Rodar o Projeto
 
--Django
-
--MySQL
-
-O blog permite o cadastro de títulos e conteúdos, armazena os dados em um banco de dados MySQL e permite a edição de posts existentes.
-
-# Como Rodar o Projeto
-
-### 1. Clonar o Repositório
+#1. Clonar o Repositório
 
 Baixe o projeto em sua máquina. Se estiver no GitHub, clone o repositório usando: git clone <URL_DO_REPOSITORIO>
 
-### 2. Abrir no VS Code
+#2. Abrir no VS Code
 
-Abra o Visual Studio Code.
+    Abra o Visual Studio Code.
+    Clique em File (ou Arquivo) > Open Folder (ou Abrir Pasta).
+    Navegue até a pasta onde o projeto foi baixado e clique em Selecionar Pasta
+   
+#4. Configurar o Banco de Dados
 
-Clique em File (ou Arquivo) > Open Folder (ou Abrir Pasta).
-
-Navegue até a pasta onde o projeto foi baixado e clique em Selecionar Pasta.
-
-### 3. Configurar as Variáveis do Banco de Dados
-
-No arquivo settings.py, configure as credenciais do banco de dados na seção DATABASES:
+No arquivo settings.py, a configuração padrão do Django já utiliza o SQLite como banco de dados. Confirme se a seção DATABASES está assim:
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'nome_do_banco',
-        'USER': 'seu_usuario',
-        'PASSWORD': 'sua_senha',
-        'HOST': 'localhost',
-        'PORT': '3306',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+#4. Rodar as Migrações
 
-### 4. Rodar as Migrações
+No terminal do VS Code, execute os seguintes comandos para criar as tabelas no banco de dados:
 
-No terminal do VS Code, execute os seguintes comandos para criar as tabelas do banco de dados:
 python manage.py makemigrations
 python manage.py migrate
 
-### 5. Rodar o Servidor de Desenvolvimento
+#5. Rodar o Servidor de Desenvolvimento
 
-Ainda no terminal, inicie o servidor do Django: python manage.py runserver
+Ainda no terminal, inicie o servidor do Django com o comando:
 
-### 6. Acessar o Projeto no Navegador
+python manage.py runserver
 
-Abra o navegador e acesse o projeto.
+#6. Acessar o Projeto no Navegador
