@@ -52,7 +52,7 @@ Ainda no terminal, inicie o servidor do Django com o comando:
 
 # Considerações e decisões relevantes
 
-jango é um framework que eu não tinha muita afinidade, já que não havia realizado projetos utilizando essa tecnologia antes, apenas assisti algumas aulas. Porém, aceitei o desafio e embarquei em uma jornada de aprendizado enriquecedora, mesmo sendo um projeto básico senti que aprendi bastante. Decidi utilizar Django no lugar do Express porque acredito que a linguagem Python, proporciona uma base sólida para projetos robustos e escaláveis.
+Django é um framework que eu não tinha muita afinidade, já que não havia realizado projetos utilizando essa tecnologia antes, apenas assisti algumas aulas. Porém, aceitei o desafio e embarquei em uma jornada de aprendizado enriquecedora, mesmo sendo um projeto básico senti que aprendi bastante. Decidi utilizar Django no lugar do Express porque acredito que a linguagem Python, proporciona uma base sólida para projetos robustos e escaláveis.
 
 Para o front-end, optei por HTML, CSS e JavaScript, pois essas tecnologias permitem criar interfaces intuitivas e responsivas para o usuáio, além de serem altamente personalizáveis para atender às necessidades especídicas do projeto.
 
